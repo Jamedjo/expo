@@ -6,6 +6,8 @@
 
 ### 🎉 New features
 
+- [av] Added web support for recording. ([#8721](https://github.com/expo/expo/pull/8721) by [@WazzaJB](https://github.com/WazzaJB))
+
 ### 🐛 Bug fixes
 
 ## 8.7.0 — 2020-11-17
