@@ -59,6 +59,6 @@ export default class ExponentVideo extends React.Component<ExponentVideoProps> {
     onCanPlay: (event: any) => void;
     onStalled: () => void;
     onRef: (ref: HTMLVideoElement) => void;
-    render(): JSX.Element;
+    render(): any;
 }
 export {};

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { NativeMethods } from 'react-native';
 import { Playback, AVPlaybackSource, AVPlaybackStatus, AVPlaybackStatusToSet, AVPlaybackNativeSource } from './AV';
 import { ExponentVideoComponent, VideoFullscreenUpdateEvent, VideoNativeProps, VideoNaturalSize, VideoProps, VideoReadyForDisplayEvent, ResizeMode, VideoState } from './Video.types';
 export { ExponentVideoComponent, VideoFullscreenUpdateEvent, VideoNativeProps, VideoNaturalSize, VideoProps, VideoReadyForDisplayEvent, ResizeMode, VideoState, AVPlaybackStatus, AVPlaybackStatusToSet, AVPlaybackNativeSource, };
@@ -23,7 +22,7 @@ export default class Video extends React.Component<VideoProps, VideoState> imple
     static FULLSCREEN_UPDATE_PLAYER_DID_PRESENT: number;
     static FULLSCREEN_UPDATE_PLAYER_WILL_DISMISS: number;
     static FULLSCREEN_UPDATE_PLAYER_DID_DISMISS: number;
-    _nativeRef: React.RefObject<React.Component<VideoNativeProps, any, any> & NativeMethods>;
+    _nativeRef: any;
     _onPlaybackStatusUpdate: ((status: AVPlaybackStatus) => void) | null;
     constructor(props: VideoProps);
     setNativeProps(nativeProps: VideoNativeProps): void;
@@ -75,6 +74,6 @@ export default class Video extends React.Component<VideoProps, VideoState> imple
     _nativeOnFullscreenUpdate: (event: {
         nativeEvent: VideoFullscreenUpdateEvent;
     }) => void;
-    _renderPoster: () => JSX.Element | null;
-    render(): JSX.Element;
+    _renderPoster: () => any;
+    render(): any;
 }
