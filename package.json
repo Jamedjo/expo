@@ -6,12 +6,6 @@
   "types": "build/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "expo-module build",
-    "clean": "expo-module clean",
-    "lint": "expo-module lint",
-    "test": "expo-module test",
-    "prepare": "expo-module prepare",
-    "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module"
   },
   "keywords": [
